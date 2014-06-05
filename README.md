@@ -1,6 +1,6 @@
 # Ktutils
 
-TODO: Write a gem description
+Handy utility methods I use in my Ruby code (and wheels I've reinvented)
 
 ## Installation
 
@@ -18,7 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To pull everything into your code
+
+    require 'ktutils'
+
+You probably don't want to pull in everything at once, you'll only need one
+or two modules/classes at a time.
+
+    require 'ktutils/os'
+
+## Utilities
+
+### OS Detection
+
+    require 'ktutils/os'
+
 
 ## Contributing
 

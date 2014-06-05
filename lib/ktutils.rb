@@ -5,3 +5,4 @@ module Ktutils
 end
 
 require 'ktutils/os'
+require 'ktutils/parse_template'

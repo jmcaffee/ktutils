@@ -31,8 +31,20 @@ or two modules/classes at a time.
 
 ### OS Detection
 
+Determine if you're running on windows, linux or mac. Doesn't currently
+support jruby.
+
     require 'ktutils/os'
 
+### Template Parsing
+
+Brute force template parsing.
+
+    require 'ktutils/parse_template'
+
+## TODOs
+
++ TESTS!
 
 ## Contributing
 

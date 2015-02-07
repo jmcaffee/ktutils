@@ -10,13 +10,16 @@
 module Ktutils
   # Sourced from
   # http://stackoverflow.com/questions/170956/how-can-i-find-which-operating-system-my-ruby-program-is-running-on/171011#171011
+  # NOTE: When running on jruby, "arch" returns universal-java1.7 (or similar)
+  #       Use "host_os" instead.
+  #
   module OS
     def OS.windows?
-      (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RbConfig::CONFIG["arch"]) != nil
+      (/mswin|mingw|bccwin|wince|emx/ =~ RbConfig::CONFIG["host_os"]) != nil
     end
 
     def OS.mac?
-    (/darwin/ =~ RbConfig::CONFIG["arch"]) != nil
+    (/darwin|mac/ =~ RbConfig::CONFIG["host_os"]) != nil
     end
 
     def OS.unix?

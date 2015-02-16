@@ -31,8 +31,7 @@ or two modules/classes at a time.
 
 ### OS Detection
 
-Determine if you're running on windows, linux or mac. Doesn't currently
-support jruby.
+Determine if you're running on windows, linux or mac. Now supports jruby!
 
     require 'ktutils/os'
 
